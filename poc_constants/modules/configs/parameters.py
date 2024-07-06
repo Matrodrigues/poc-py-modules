@@ -9,7 +9,7 @@ class ConfigLoader:
 
     def __init__(self, force_env='tu'):
         self.current_env = Environment.get_current_env(force_env)
-        self.config = YamlFunctions('poc_constants\poc_constants\modules\configs\config.yaml').process_yaml_replacement('{env_acronym}', self.current_env)
+        self.config = YamlFunctions('poc_constants\modules\configs\config.yaml').process_yaml_replacement('{env_acronym}', self.current_env)
 
     def get_principal_catalog(self) -> PrincipalCatalog:
         return PrincipalCatalog(self.config['principal_catalog'])
