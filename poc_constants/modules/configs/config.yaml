@@ -1,0 +1,28 @@
+environment:
+  tu: tu 
+  ti: ti
+  th: th
+  pr: pr
+
+principal_catalog:
+  name: bs_catalog_dgds_{env_acronym}
+  schema_bronze: bronze
+  schema_silver: silver
+  schema_gold: gold
+
+service_principal:
+  tu: sp_tu_123456849
+  ti: sp_ti_789456123
+  th: sp_th_456789123
+  pr: sp_pr_456123789
+
+storage_account:
+  bronze: abfss://bronze@azubsdgdssa{env_acronym}.com.br/
+  silver: abfss://silver@azubsdgdssa{env_acronym}.com.br/
+  gold: abfss://gold@azubsdgdssa{env_acronym}.com.br/
+
+carro:
+  cor: preto
+  tipo: sedan
+  modelo: cruze_{env_acronym}
+
